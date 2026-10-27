@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alicia en el país de las maravillas - Programación Web I</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Actividad Práctica: Alicia en el país de las maravillas</h1>
+        <p>Programación Web I - JavaScript Nativo</p>
+    </header>
+
+    <main class="container">
+        <!-- EJERCICIO 1 -->
+        <section class="card">
+            <h2>Ejercicio 1: La poción mágica de Alicia</h2>
+            <p>Estructuras condicionales para evaluar la altura y la poción.</p>
+            <form id="formPocion">
+                <label for="alturaInicial">Altura inicial de Alicia (cm):</label>
+                <input type="number" id="alturaInicial" step="any" required>
+
+                <label for="cantidadPocion">Cantidad de poción (ml):</label>
+                <input type="number" id="cantidadPocion" step="any" required>
+
+                <button type="submit">Calcular Tamaño</button>
+            </form>
+            <div id="resultadoPocion" class="resultado"></div>
+        </section>
+
+        <section class="card">
+            <h2>Ejercicio 2: La merienda del Sombrerero Loco</h2>
+            <p>Estructura switch para selección múltiple de bebidas y descuentos.</p>
+            <form id="formMerienda">
+                <label for="nombreInvitado">Nombre del invitado:</label>
+                <input type="text" id="nombreInvitado" required>
+
+                <label for="tipoBebida">Tipo de bebida:</label>
+                <select id="tipoBebida" required>
+                    <option value="">Seleccione una bebida</option>
+                    <option value="te">Té Loco (Precio: $10)</option>
+                    <option value="cafe">Café del Dormir (Precio: $12)</option>
+                    <option value="jugo">Jugo de Reina (Precio: $15)</option>
+                    <option value="vino">Vino del Conejo (Precio: $20)</option>
+                </select>
+
+                <label for="cantidadTazas">Cantidad de tazas:</label>
+                <input type="number" id="cantidadTazas" min="1" required>
+
+                <button type="submit">Calcular Meriendas</button>
+            </form>
+            <div id="resultadoMerienda" class="resultado"></div>
+        </section>
+
+        <section class="card">
+            <h2>Ejercicio 3: El desafío de la Reina de Corazones</h2>
+            <p>Estructura repetitiva (for) para clasificar cartas numéricas.</p>
+            <form id="formReina">
+                <label for="numCartas">Cantidad de cartas (número positivo):</label>
+                <input type="number" id="numCartas" min="1" required>
+
+                <button type="submit">Analizar Cartas</button>
+            </form>
+            <div id="resultadoReina" class="resultado"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Programación Web I &copy; 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

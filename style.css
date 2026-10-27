@@ -1,0 +1,90 @@
+:root {
+    --primary-color: #6a0dad;
+    --secondary-color: #ffb6c1;
+    --bg-color: #f4f0fa;
+    --card-bg: #ffffff;
+    --text-color: #333333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    border-left: 5px solid var(--primary-color);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 1rem;
+}
+
+label {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+input, select {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.7rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 0.5krem;
+}
+
+button:hover {
+    background-color: #520b88;
+}
+
+.resultado {
+    margin-top: 1rem;
+    padding: 0.8rem;
+    background-color: #f9f6fc;
+    border-left: 3px solid #ff69b4;
+    font-size: 0.95rem;
+    white-space: pre-line;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #ddd;
+    font-size: 0.9rem;
+}
